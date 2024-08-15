@@ -42,7 +42,6 @@ def getHandInfo(img):
         lmList = hand["lmList"]  # List of 21 landmarks for the first hand
         # Count the number of fingers up for the first hand
         fingers = detector.fingersUp(hand)
-        print(fingers)
         return fingers, lmList
     else:
         return None
